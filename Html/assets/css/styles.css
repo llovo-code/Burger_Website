@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
+/* aclonica-latin-400-normal
+@font-face {
+  font-family: 'Aclonica';
+  font-style: normal;
+  font-display: swap;
+  font-weight: 400;
+  src: url(https://cdn.jsdelivr.net/fontsource/fonts/aclonica@latest/latin-400-normal.woff2) format('woff2'), url(https://cdn.jsdelivr.net/fontsource/fonts/aclonica@latest/latin-400-normal.woff) format('woff');
+  unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
+} */
+
+:root {
+
+  /** =====Colors */
+  --first-color: hsl(45, 90%, 55%);
+  --first-color-alt: hsl(45, 99%, 48%);
+  --second-color: hsl(22, 100%, 8%);
+  --white-color: hsl(34, 100%, 96%);
+  --title-color: hsl(22, 100%, 8);
+  --text-color: hsl(22, 24%, 32%);
+  --text-color-light: hsl(23, 16%, 40%);
+  --body-color: hsl(34, 100%, 92%);
+  --body-color-alt: hsl(34, 100%, 88%);
+  --container-color: hsl(34, 100%, 96%);
+  --shadow-small-img: drop-shadow(0 4px 16px hsla(22, 100%, 8%, .2));
+  --shadow-big-img: drop-shadow(0 8px 24px hsla(22, 100%, 8%, .2));
+
+  /**Font and Topography*/
+  --body-font: "Montserrat", sans-serif;
+  --second-font: "Aclonica", sans-serif;
+  --biggest-font-size: 3rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: 813rem;
+
+  /**Font Weight*/
+
+  --font-regular: 400;
+  --font-normmal: 500;
+  --font-semi-bold: 600;
+
+  /** z index */
+  --z-tooltip: 10;
+  --z-fixed: 100;
+}
+
+/**   ======================= Responsive typography============================ */
+
+@media screen and (min-width: 1150px) {
+  :root {
+    --biggest-font-size: 4.5rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 875rem;
+  }
+}
+
+/** Base ***/
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: var(--text-color);
+  font-family: var(--second-font);
+  font-weight: var(--font-regular);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.container {
+  max-width: 1120px;
+  margin-inline: 1.5rem;
+
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+}
+
+.section {
+  padding-block: 5rem 1rem;
+}
+
+.section__title {
+  text-align: center;
+  font-size: var(--h1-font-size);
+  margin-bottom: 2rem;
+
+}
+
+
+.main {
+  overflow: hidden;
+}
+
+
+/************** Header and nav ****************/
