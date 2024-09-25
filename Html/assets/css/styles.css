@@ -10,7 +10,7 @@
   unicode-range: U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD;
 } */
 :root {
-  --header-height:3.5rem;
+  --header-height: 3.5rem;
   /** =====Colors */
   --first-color: hsl(45, 90%, 55%);
   --first-color-alt: hsl(45, 99%, 48%);
@@ -171,8 +171,8 @@ img {
   background-color: var(--first-color);
   position: absolute;
   left: 0;
-  bottom: -.5rem;
-  transition: width .5s; }
+  bottom: -0.5rem;
+  transition: width 0.5s; }
 
 .nav__link:hover::after {
   width: 60%; }
@@ -193,7 +193,8 @@ img {
 
 .home__data {
   position: relative;
-  text-align: center; }
+  text-align: center;
+  /*======Button home==================*/ }
   .home__data .home__title {
     font-size: var(--biggest-font-size);
     margin-bottom: 1rem; }
@@ -205,7 +206,7 @@ img {
     position: absolute;
     bottom: 2rem;
     right: 1rem;
-    opacity: .5; }
+    opacity: 0.5; }
   .home__data .button {
     padding: 1rem 2rem;
     background-color: var(--first-color);
@@ -213,6 +214,63 @@ img {
     color: var(--title-color);
     border-radius: 4rem;
     font-family: var(--second-font);
-    transition: box-shadow .4s; }
+    transition: box-shadow 0.4s; }
   .home__data .button:hover {
     box-shadow: 0 8px 24px rgba(41, 15, 0, 0.2); }
+
+.home__images {
+  position: relative;
+  display: grid;
+  justify-items: center;
+  justify-self: center; }
+
+.home__ingredient {
+  width: 60px;
+  filter: var(--shadow-small-img);
+  position: absolute;
+  z-index: 2; }
+
+.home__burger,
+.home__dish {
+  filter: var(--shadow-big-img); }
+
+.home__burger {
+  width: 280px;
+  z-index: 2; }
+
+.home__dish {
+  max-width: initial;
+  width: 380px;
+  position: absolute;
+  bottom: -2.5rem; }
+
+.home__potato-1 {
+  left: -1.5rem; }
+
+.home__potato-2 {
+  right: -0.75rem;
+  bottom: -2rem;
+  rotate: 90deg; }
+
+.home__tomato-1 {
+  width: 40px;
+  top: -1rem;
+  right: 6rem; }
+
+.home__tomato-2 {
+  width: 40px;
+  left: 5.5rem;
+  bottom: -1.5rem; }
+
+.home__lettuce-1 {
+  top: 2.5rem;
+  right: -2rem;
+  transform: scaleX(-1); }
+
+.home__lettuce-2 {
+  bottom: 1rem;
+  left: -2.5rem;
+  transform: scaleX(1); }
+
+.shadow-header {
+  box-shadow: 0 4px 16px rgba(41, 15, 0, 0.5); }
