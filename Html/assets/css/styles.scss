@@ -36,7 +36,7 @@
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
-  --small-font-size: 813rem;
+  --small-font-size: 0.813rem;
 
   /**Font Weight*/
 
@@ -234,4 +234,43 @@ img {
   padding-block: 3rem 2rem;
   justify-content: center;
   row-gap: 3.5rem;
+}
+
+.home__data{
+  position: relative;
+   text-align: center;
+  // display: flex;
+  // flex-direction: column;
+  // gap: 1.5rem;
+
+  .home__title{
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1rem;
+  }
+  .home__description{
+    margin-bottom: 2rem;
+  }
+
+  .home__sticker{
+    width: 40px;
+    rotate: 15deg;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    opacity: .5;
+  }
+
+  .button{
+    padding: 1rem 2rem;
+    background-color: var(--first-color);
+    display: inline-flex;
+    color: var(--title-color);
+    border-radius: 4rem;
+    font-family: var(--second-font);
+    transition: box-shadow .4s;
+
+  }
+  .button:hover{
+    box-shadow: 0 8px 24px hsla(22, 100%, 8%, .2);
+  }
 }

@@ -32,7 +32,7 @@
   --h2-font-size: 1.25rem;
   --h3-font-size: 1rem;
   --normal-font-size: 0.938rem;
-  --small-font-size: 813rem;
+  --small-font-size: 0.813rem;
   /**Font Weight*/
   --font-regular: 400;
   --font-normmal: 500;
@@ -190,3 +190,29 @@ img {
   padding-block: 3rem 2rem;
   justify-content: center;
   row-gap: 3.5rem; }
+
+.home__data {
+  position: relative;
+  text-align: center; }
+  .home__data .home__title {
+    font-size: var(--biggest-font-size);
+    margin-bottom: 1rem; }
+  .home__data .home__description {
+    margin-bottom: 2rem; }
+  .home__data .home__sticker {
+    width: 40px;
+    rotate: 15deg;
+    position: absolute;
+    bottom: 2rem;
+    right: 1rem;
+    opacity: .5; }
+  .home__data .button {
+    padding: 1rem 2rem;
+    background-color: var(--first-color);
+    display: inline-flex;
+    color: var(--title-color);
+    border-radius: 4rem;
+    font-family: var(--second-font);
+    transition: box-shadow .4s; }
+  .home__data .button:hover {
+    box-shadow: 0 8px 24px rgba(41, 15, 0, 0.2); }
