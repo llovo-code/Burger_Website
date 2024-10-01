@@ -671,7 +671,7 @@ img {
 /*======Scroll UP==================*/
 .scrollUp{
   position: fixed;
-  bottom: 3rem;
+  bottom: -50%;
   right: 1rem;
   width: 32px;
   height: 32px;
@@ -681,4 +681,16 @@ img {
   place-items: center;
   border-radius: 50%;
   box-shadow: 0 4px 16px hsla(22, 100%, 8%, .2);
+  transition: bottom .4s, transform .4s 
+
+  
+}
+
+.scrollUp:hover{
+  // transform: scaleY(-2rem);
+  transform: translateY(-.5rem);
+}
+
+.show-scrollUp{
+  bottom: 3rem;
 }
