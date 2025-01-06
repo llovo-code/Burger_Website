@@ -1,3 +1,8 @@
+// document.addEventListener("DOMContentLoaded", () => {
+//   window.scrollTo(0, 0);
+// });
+
+
 // ===================Show Menu ===================//
 const nav_close = document.getElementById("nav-close"),
   nav_toggle = document.getElementById("nav-toggle"),
@@ -69,3 +74,25 @@ const scrollActive = () => {
 };
 
 window.addEventListener("scroll", scrollActive);
+
+
+// Reveal Scroll
+
+const scrv = ScrollReveal({
+  origin:'top',
+  distance: '60px',
+  duration:2500,
+  delay:300
+})
+
+scrv.reveal(`.home__data, .footer`);
+scrv.reveal(`.home__dish`,{delay:500, distance: '100px',origin:'bottom' });
+scrv.reveal(`.home__burger`,{delay:1000, distance:'100px',duration:1500});
+scrv.reveal(`.home__ingredient`,{delay:1600,interval:100});
+scrv.reveal(`.recipe__image, .delivery__img, .contact__image`,{delay:600,origin:'left',duration:1000,});
+scrv.reveal(`.recipe__data, .delivery__data, .contact__data`,{delay:600,origin:'rigth',duration:1000});
+scrv.reveal(`.popular__card`,{delay:500,origin:'rigth',interval:50});
+
+
+scrv.reveal(`.contact__sticker-1, .contact__sticker-2`,{delay:1000,interval:300});
+
